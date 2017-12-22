@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 root = Tk()
 root.title("GendBR Generator")
 root.geometry("360x150")
-root.config(relief=SOLID, bg='#252525', highlightbackground="#252525",  highlightcolor='#252525', bd=1)
+root.config(relief=SOLID, bg='#252525', bd=1)
 root.option_add("*Font", "FOT-RodinBokutoh 8")
 
 def GENDBR(event):
@@ -353,8 +353,8 @@ male = ImageTk.PhotoImage(image_male)
 res_gendbr_lab1 = Label(root, text='Insert texts here:', fg='#FFFFFF', bg='#242424')
 res_gendbr_lab2 = Label(root, text='Generated text:', fg='#FFFFFF', bg='#242424')
 
-res_gendbr_ico1 = Label(root, image=male)
-res_gendbr_ico2 = Label(root, image=female)
+res_gendbr_ico1 = Label(root, image=male, bg='#252525')
+res_gendbr_ico2 = Label(root, image=female, bg='#252525')
 
 res_gendbr_entry1.place(x=25, y=30, width=145)
 res_gendbr_entry2.place(x=195, y=30, width=145)
